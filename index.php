@@ -7,6 +7,7 @@ $con = conectabd();
 $queryIsereFilme="SELECT  `nome`, `sinopse`, `imdb`, `qualidade`, `ano`, `nome_original`, `link_fonte`, `link_imagem`, `categoria` FROM `filmes` ";
 $resultados = mysqli_query($con, $queryIsereFilme);
 cabeca();
+descricaoIndex();
 ?>
 <div class="container-fluid">
   <div class="row">
@@ -32,9 +33,9 @@ cabeca();
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+              <a class="nav-link" href="cadastroUsuario.php">
               <span data-feather="users"></span>
-              Buscar Usuario 
+              Cadastrar Usuario
             </a>
           </li>
           <li class="nav-item">

@@ -8,8 +8,7 @@ function cabeca(){
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
-    <title>Dashboard Template · Bootstrap</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+       <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <link href="css/dashboard.css" rel="stylesheet">
       <link href="css/estilo.css" rel="stylesheet">
   </head>
@@ -37,5 +36,29 @@ function rodape (){
       <script src="js/dashboard.js"></script></body>
 </html>
 ';
+};
+
+function descricaoIndex(){
+    
+    echo ' <title>Sistema de Cadastro de Filmes</title>';
+    
+};
+
+function descricaoCadastrarFilmes(){
+    
+    echo ' <title>Sistema de Cadastro de Filmes | Cadastrar Filmes</title>';
+    
+};
+
+function descricaoCadastrarUsuarios(){
+    
+    echo ' <title>Sistema de Cadastro de Filmes | Cadastrar Usuarios</title>';
+    
+};
+
+function descricaoBuscarFilmes(){
+    
+    echo ' <title>Sistema de Cadastro de Filmes | Buscar Filme</title>';
+    
 };
 

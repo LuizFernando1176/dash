@@ -2,6 +2,7 @@
 include_once './util/corpo.php';
 
 cabeca();
+descricaoCadastrarFilmes();
 ?>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript">
@@ -56,9 +57,9 @@ cabeca();
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+              <a class="nav-link" href="cadastroUsuario.php">
               <span data-feather="users"></span>
-              Buscar Usuario 
+              Cadastrar Usuario
             </a>
           </li>
           <li class="nav-item">
