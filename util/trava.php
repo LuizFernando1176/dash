@@ -1,1 +1,0 @@
-<?phpsession_start();if ($logado != "SIM") {   header("Location: nao_logado.php");}?>

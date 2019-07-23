@@ -5,10 +5,12 @@ include_once './util/conectaBD.php';
 
 
 cabecalogin();
+
 loginFilmes();
 ?>
       
 <div class="container">
+     
 <div class="container-fluid">
     <br><br><br><br><br><br>
     <div class="card">

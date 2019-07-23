@@ -1,6 +1,7 @@
 <?php
 function cabeca(){
     
+    
     echo '<html lang="en">
   <head>
     <meta charset="utf-8">
@@ -17,7 +18,7 @@ function cabeca(){
   
   <ul class="navbar-nav px-3">
     <li class="nav-item text-nowrap">
-      
+     
     </li>
   </ul>
 </nav>';

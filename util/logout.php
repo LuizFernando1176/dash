@@ -1,7 +1,12 @@
 <?php
-	/* Destruimos a sessão e redirecionamos 
-		o usuário para a página index.php */
-	session_start();
-	session_destroy();
-	header("Location: ../login.php")
+// Inicializa a sessão.
+// Se estiver sendo usado session_name("something"), não esqueça de usá-lo agora!
+session_start();
+session_destroy();
+unset( $_SESSION );
+echo' <SCRIPT Language="javascript">
+alert("Usuário desconectado !!");
+location.href="../login.php";
+</SCRIPT>';
 ?>
+	
