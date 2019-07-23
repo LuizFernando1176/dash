@@ -1,39 +1,13 @@
 <?php
 include_once './util/corpo.php';
 include_once './util/conectaBD.php';
+include "./contato/enviar.php";
+
 
 cabeca();
 descricaoCadastrarUsuarios();
 ?>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script type="text/javascript">
-   
-	jQuery(document).ready(function() {
-    jQuery('#ajax_form2').submit(function() {
-        var dados = jQuery(this).serialize();
-
-
-        jQuery.ajax({
-            type: "POST",
-            url: "inserts/inserir_usuarios.php",
-            data: dados,
-            success: function(data) {
-                alert(data);
-                $('#ajax_form2').each(function() {
-                    this.reset();
-                });
-            }
-
-        })
-
-
-        return false;
-    });
-
-});
-     
-	</script>
-       
+      
 
 <div class="container-fluid">
   <div class="row">
@@ -59,19 +33,19 @@ descricaoCadastrarUsuarios();
             </a>
           </li>
           <li class="nav-item">
-              <a class="nav-link active" href="cadastroUsuario.php">
+              <a class="nav-link " href="cadastroUsuario.php">
               <span data-feather="users"></span>
               Cadastrar Usuario
             </a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="contato.php">
+            <a class="nav-link active" href="contato.php">
               <span data-feather="mail"></span>
               Contato
             </a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="util/logout.php">
+              <a class="nav-link " href="util/logout.php">
               <span data-feather="log-out"></span>
               Sair
             </a>
@@ -102,7 +76,7 @@ descricaoCadastrarUsuarios();
       </div>
         <div class="card">
             <div class="card-header">
-                <center><h4 class="mb-0">Cadastro de Usuarios</h4></center>
+                <center><h4 class="mb-0">Formulario Contato</h4></center>
                         </div>
    <!--<div class="card-header"><i class="fa fa-fw fa-globe"></i> <strong>Browse User</strong> <a href="add-users.php" class="float-right btn btn-dark btn-sm"><i class="fa fa-fw fa-plus-circle"></i> Add Users</a></div>-->
    <div class="card-body">
@@ -118,34 +92,29 @@ descricaoCadastrarUsuarios();
 
 
 <div class="card-body">
-    <form class="form" id="ajax_form2" autocomplete="off">
-        <div class="form-group row">
-            <label class="col-lg-3 col-form-label form-control-label">Nome</label>
-            <div class="col-lg-9">
-                <input class="form-control" name="nome" type="text" value="">
-            </div>
-        </div>
-        <div class="form-group row">
-            <label class="col-lg-3 col-form-label form-control-label">Usuario</label>
-            <div class="col-lg-9">
-                <input class="form-control" name="user" type="text" value="">
-            </div>
-        </div>
-             <div class="form-group row">
-            <label class="col-lg-3 col-form-label form-control-label">Senha</label>
-            <div class="col-lg-9">
-                <input class="form-control" name="senha" type="password" value="">
-            </div>
-        </div>
-                <div class="form-group row">
-            <label class="col-lg-3 col-form-label form-control-label"></label>
-            <div class="col-lg-9">
-                <button type="reset" class="btn btn-secondary" value="">Apagar</button>
-                <button type="submit" class="btn btn-primary" value="">Enviar</button>
-                
-            </div>
-        </div>
+ 
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+     <form method="post"  class="form">
+    
+        <label for="name">Nome</label>
+        <input type="text" id="name" />
+  
+        <label for="email">E-mail</label>
+        <input type="text" id="email" />
+  
+   
+        <label for="mensagem">Mensagem</label>
+        <textarea id="messagem"></textarea>
+        <br>
+        <br>
+        <center>
+    <button type="submit" class="btn btn-outline-success" >Enviar</button>
+       </center>
+
     </form>
+
 </div>
 
                     <!-- /form user info -->

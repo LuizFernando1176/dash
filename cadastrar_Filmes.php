@@ -1,5 +1,7 @@
 <?php
 include_once './util/corpo.php';
+include_once './util/trava.php';
+include_once './util/conectaBD.php';
 
 cabeca();
 descricaoCadastrarFilmes();
@@ -63,13 +65,13 @@ descricaoCadastrarFilmes();
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+              <a class="nav-link" href="contato.php">
               <span data-feather="mail"></span>
               Contato
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+              <a class="nav-link" href="util/logout.php">
               <span data-feather="log-out"></span>
               Sair
             </a>
